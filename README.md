@@ -1,6 +1,6 @@
 # incomplete-hosts Cookbook
 Dynamically manages the HOSTS file
-
+*Requires a Chef server*
 
 ## Usage
 Just include `incomplete-hosts` in your node's `run_list`
@@ -28,7 +28,7 @@ run_list 'recipe[incomplete-hosts]'
   </tr>
   <tr>
     <td><tt>['incomplete-hosts']['search_query']</tt></td>
-    <td>String</td>
+    <td>String/Array</td>
     <td>The search query used to find nodes to add. e.g. role:db</td>
     <td>'*:*'</td>
   </tr>
